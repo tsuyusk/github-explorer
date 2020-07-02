@@ -4,6 +4,7 @@ export const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 790px;
 
   a {
     text-decoration: none;
@@ -37,12 +38,21 @@ export const RepositoryInfo = styled.section`
       strong {
         font-size: 36px;
         color: #3d3d4d;
+        word-wrap: break-word;
       }
       p {
         font-size: 18px;
         color: #737380;
         margin-top: 4px;
+        word-wrap: break-word;
       }
+    }
+
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
   }
   ul {
@@ -67,6 +77,11 @@ export const RepositoryInfo = styled.section`
         margin-top: 4px;
         color: #6c6c80;
       }
+    }
+
+    @media screen and (max-width: 500px) {
+      align-items: center;
+      justify-content: center;
     }
   }
 `;

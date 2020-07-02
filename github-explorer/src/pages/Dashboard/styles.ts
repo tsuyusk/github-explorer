@@ -45,7 +45,7 @@ export const Form = styled.form<IFormProps>`
   ${props =>
     props.hasError &&
     css`
-      animation: ${shake} 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+      animation: ${shake} 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
     `}
 
   input {
@@ -142,12 +142,14 @@ export const Repositories = styled.div`
     strong {
       font-size: 20px;
       color: #3d3d64;
+      word-wrap: break-word;
     }
 
     p {
       font-size: 16px;
       font-size: A8A8B3;
       margin-top: 4px;
+      word-wrap: break-word;
     }
   }
   svg {
