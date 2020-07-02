@@ -92,10 +92,12 @@ export const Form = styled.form<IFormProps>`
     input {
       flex: none;
       height: 70px;
+      border-radius: 5px 5px 0 0;
     }
     button {
       width: 100%;
       height: 70px;
+      border-radius:0 0 5px 5px;
     }
   }
 `;
